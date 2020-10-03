@@ -1,2 +1,2 @@
-#LD JAM 47 - Stuck in a Loop
+# LD JAM 47 - Stuck in a Loop
 
