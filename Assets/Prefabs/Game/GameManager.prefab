@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &9122693314011486228
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9122693314011486230}
+  - component: {fileID: 9122693314011486231}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9122693314011486230
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9122693314011486228}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.7539412, y: -0.10224052, z: -0.4404297}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9122693314011486231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9122693314011486228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09b770eb771e22f43957e81f9a2b38cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sceneChanger: {fileID: 11400000, guid: 48cf79873f60ed544af39205b11a7400, type: 2}
+  _triggers:
+  - _trigger: {fileID: 0}
+    _orb: {fileID: 11400000, guid: 253449600047a6e4984ccb63b478c3c3, type: 2}
+  - _trigger: {fileID: 0}
+    _orb: {fileID: 11400000, guid: b2a50f012c9710246afeec3f39a4e5d7, type: 2}
+  - _trigger: {fileID: 0}
+    _orb: {fileID: 11400000, guid: e5ab3126c0b034b4e99cf7443d2cb92a, type: 2}
+  - _trigger: {fileID: 0}
+    _orb: {fileID: 11400000, guid: b236add0a58b9bd4e9670288584cd4e2, type: 2}
+  _onTriggerOrbChanged: {fileID: 11400000, guid: 09267f9bf33bf3b4aadcb78e0e784ab0,
+    type: 2}
+  _player: {fileID: 11400000, guid: c2abf49b5acaf054abbdf1006c767bed, type: 2}

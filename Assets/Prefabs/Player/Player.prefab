@@ -135,11 +135,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerData: {fileID: 11400000, guid: c2abf49b5acaf054abbdf1006c767bed, type: 2}
+  _speed: 5
   _orbSlot: {fileID: 8211342708134550112}
-  _speed: 8
   _orbLayer:
     serializedVersion: 2
     m_Bits: 256
+  _orbPickupRadius: 1.2
+  _sceneChanger: {fileID: 11400000, guid: 48cf79873f60ed544af39205b11a7400, type: 2}
 --- !u!1 &8211342708134550110
 GameObject:
   m_ObjectHideFlags: 0

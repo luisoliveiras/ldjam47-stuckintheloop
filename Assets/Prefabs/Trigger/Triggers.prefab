@@ -65,7 +65,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66cca342e4b81534c80be82cd94f77cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerData: {fileID: 0}
+  _playerData: {fileID: 11400000, guid: c2abf49b5acaf054abbdf1006c767bed, type: 2}
   _orbHolders:
   - {fileID: 1995637821887938323}
   - {fileID: 1995637823612225080}
@@ -231,8 +231,9 @@ PrefabInstance:
     - target: {fileID: 1778527857343837668, guid: 07a6db657b346ee4eb4c23a2ee21a974,
         type: 3}
       propertyPath: _triggerType
-      value: 1
-      objectReference: {fileID: 0}
+      value: 
+      objectReference: {fileID: 11400000, guid: 09ddc81ca5357404f9f841d6a7007568,
+        type: 2}
     - target: {fileID: 1778527857343837669, guid: 07a6db657b346ee4eb4c23a2ee21a974,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -311,8 +312,9 @@ PrefabInstance:
     - target: {fileID: 1778527857343837668, guid: 07a6db657b346ee4eb4c23a2ee21a974,
         type: 3}
       propertyPath: _triggerType
-      value: 1
-      objectReference: {fileID: 0}
+      value: 
+      objectReference: {fileID: 11400000, guid: 0995eaf54dd19d34fa93f5b440e59189,
+        type: 2}
     - target: {fileID: 1778527857343837669, guid: 07a6db657b346ee4eb4c23a2ee21a974,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -391,8 +393,9 @@ PrefabInstance:
     - target: {fileID: 1778527857343837668, guid: 07a6db657b346ee4eb4c23a2ee21a974,
         type: 3}
       propertyPath: _triggerType
-      value: 1
-      objectReference: {fileID: 0}
+      value: 
+      objectReference: {fileID: 11400000, guid: 0995eaf54dd19d34fa93f5b440e59189,
+        type: 2}
     - target: {fileID: 1778527857343837669, guid: 07a6db657b346ee4eb4c23a2ee21a974,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -468,6 +471,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 225030101226019365}
     m_Modifications:
+    - target: {fileID: 1778527857343837668, guid: 07a6db657b346ee4eb4c23a2ee21a974,
+        type: 3}
+      propertyPath: _triggerType
+      value: 
+      objectReference: {fileID: 11400000, guid: ce9b78c2bb2859640a655b900f4968e3,
+        type: 2}
     - target: {fileID: 1778527857343837669, guid: 07a6db657b346ee4eb4c23a2ee21a974,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -546,8 +555,9 @@ PrefabInstance:
     - target: {fileID: 1778527857343837668, guid: 07a6db657b346ee4eb4c23a2ee21a974,
         type: 3}
       propertyPath: _triggerType
-      value: 4
-      objectReference: {fileID: 0}
+      value: 
+      objectReference: {fileID: 11400000, guid: 09ddc81ca5357404f9f841d6a7007568,
+        type: 2}
     - target: {fileID: 1778527857343837669, guid: 07a6db657b346ee4eb4c23a2ee21a974,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -637,8 +647,9 @@ PrefabInstance:
     - target: {fileID: 1778527857343837668, guid: 07a6db657b346ee4eb4c23a2ee21a974,
         type: 3}
       propertyPath: _triggerType
-      value: 3
-      objectReference: {fileID: 0}
+      value: 
+      objectReference: {fileID: 11400000, guid: 09ddc81ca5357404f9f841d6a7007568,
+        type: 2}
     - target: {fileID: 1778527857343837669, guid: 07a6db657b346ee4eb4c23a2ee21a974,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -822,8 +833,9 @@ PrefabInstance:
     - target: {fileID: 1778527857343837668, guid: 07a6db657b346ee4eb4c23a2ee21a974,
         type: 3}
       propertyPath: _triggerType
-      value: 3
-      objectReference: {fileID: 0}
+      value: 
+      objectReference: {fileID: 11400000, guid: 619a560c8b1184c4cabc7c120c475369,
+        type: 2}
     - target: {fileID: 1778527857343837669, guid: 07a6db657b346ee4eb4c23a2ee21a974,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -902,8 +914,9 @@ PrefabInstance:
     - target: {fileID: 1778527857343837668, guid: 07a6db657b346ee4eb4c23a2ee21a974,
         type: 3}
       propertyPath: _triggerType
-      value: 2
-      objectReference: {fileID: 0}
+      value: 
+      objectReference: {fileID: 11400000, guid: ce9b78c2bb2859640a655b900f4968e3,
+        type: 2}
     - target: {fileID: 1778527857343837669, guid: 07a6db657b346ee4eb4c23a2ee21a974,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1057,8 +1070,9 @@ PrefabInstance:
     - target: {fileID: 1778527857343837668, guid: 07a6db657b346ee4eb4c23a2ee21a974,
         type: 3}
       propertyPath: _triggerType
-      value: 1
-      objectReference: {fileID: 0}
+      value: 
+      objectReference: {fileID: 11400000, guid: 0995eaf54dd19d34fa93f5b440e59189,
+        type: 2}
     - target: {fileID: 1778527857343837668, guid: 07a6db657b346ee4eb4c23a2ee21a974,
         type: 3}
       propertyPath: OnOrbChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -1142,8 +1156,9 @@ PrefabInstance:
     - target: {fileID: 1778527857343837668, guid: 07a6db657b346ee4eb4c23a2ee21a974,
         type: 3}
       propertyPath: _triggerType
-      value: 1
-      objectReference: {fileID: 0}
+      value: 
+      objectReference: {fileID: 11400000, guid: 0995eaf54dd19d34fa93f5b440e59189,
+        type: 2}
     - target: {fileID: 1778527857343837669, guid: 07a6db657b346ee4eb4c23a2ee21a974,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1222,8 +1237,9 @@ PrefabInstance:
     - target: {fileID: 1778527857343837668, guid: 07a6db657b346ee4eb4c23a2ee21a974,
         type: 3}
       propertyPath: _triggerType
-      value: 4
-      objectReference: {fileID: 0}
+      value: 
+      objectReference: {fileID: 11400000, guid: 09ddc81ca5357404f9f841d6a7007568,
+        type: 2}
     - target: {fileID: 1778527857343837668, guid: 07a6db657b346ee4eb4c23a2ee21a974,
         type: 3}
       propertyPath: OnOrbChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -1307,8 +1323,9 @@ PrefabInstance:
     - target: {fileID: 1778527857343837668, guid: 07a6db657b346ee4eb4c23a2ee21a974,
         type: 3}
       propertyPath: _triggerType
-      value: 2
-      objectReference: {fileID: 0}
+      value: 
+      objectReference: {fileID: 11400000, guid: 0995eaf54dd19d34fa93f5b440e59189,
+        type: 2}
     - target: {fileID: 1778527857343837669, guid: 07a6db657b346ee4eb4c23a2ee21a974,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1393,8 +1410,9 @@ PrefabInstance:
     - target: {fileID: 1778527857343837668, guid: 07a6db657b346ee4eb4c23a2ee21a974,
         type: 3}
       propertyPath: _triggerType
-      value: 1
-      objectReference: {fileID: 0}
+      value: 
+      objectReference: {fileID: 11400000, guid: 0995eaf54dd19d34fa93f5b440e59189,
+        type: 2}
     - target: {fileID: 1778527857343837668, guid: 07a6db657b346ee4eb4c23a2ee21a974,
         type: 3}
       propertyPath: OnOrbChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -1490,8 +1508,9 @@ PrefabInstance:
     - target: {fileID: 1778527857343837668, guid: 07a6db657b346ee4eb4c23a2ee21a974,
         type: 3}
       propertyPath: _triggerType
-      value: 4
-      objectReference: {fileID: 0}
+      value: 
+      objectReference: {fileID: 11400000, guid: ce9b78c2bb2859640a655b900f4968e3,
+        type: 2}
     - target: {fileID: 1778527857343837669, guid: 07a6db657b346ee4eb4c23a2ee21a974,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1581,8 +1600,15 @@ PrefabInstance:
     - target: {fileID: 1778527857343837668, guid: 07a6db657b346ee4eb4c23a2ee21a974,
         type: 3}
       propertyPath: _triggerType
-      value: 3
-      objectReference: {fileID: 0}
+      value: 
+      objectReference: {fileID: 11400000, guid: 619a560c8b1184c4cabc7c120c475369,
+        type: 2}
+    - target: {fileID: 1778527857343837668, guid: 07a6db657b346ee4eb4c23a2ee21a974,
+        type: 3}
+      propertyPath: _empty
+      value: 
+      objectReference: {fileID: 11400000, guid: 4717f303b2841df458b32d03ca0efa3d,
+        type: 2}
     - target: {fileID: 1778527857343837669, guid: 07a6db657b346ee4eb4c23a2ee21a974,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1753,17 +1779,19 @@ PrefabInstance:
     - target: {fileID: 1778527857343837668, guid: 07a6db657b346ee4eb4c23a2ee21a974,
         type: 3}
       propertyPath: _triggerType
-      value: 2
-      objectReference: {fileID: 0}
+      value: 
+      objectReference: {fileID: 11400000, guid: ce9b78c2bb2859640a655b900f4968e3,
+        type: 2}
     - target: {fileID: 1778527857343837668, guid: 07a6db657b346ee4eb4c23a2ee21a974,
         type: 3}
       propertyPath: OnOrbChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: 09267f9bf33bf3b4aadcb78e0e784ab0,
+        type: 2}
     - target: {fileID: 1778527857343837668, guid: 07a6db657b346ee4eb4c23a2ee21a974,
         type: 3}
       propertyPath: OnOrbChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ToggleDoor
+      value: Trigger
       objectReference: {fileID: 0}
     - target: {fileID: 1778527857343837669, guid: 07a6db657b346ee4eb4c23a2ee21a974,
         type: 3}

@@ -6,14 +6,18 @@ using UnityEngine.SceneManagement;
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerController : MonoBehaviour
 {
+    [Header("Player")]
+    [SerializeField] PlayerData _playerData;
+    [SerializeField] float _speed;
+    [Header("Orb Pickup")]
+    [SerializeField] SpriteRenderer _orbSlot;
+    [SerializeField] LayerMask _orbLayer;
+    [SerializeField] float _orbPickupRadius;
+    [Header("Other")]
+    [SerializeField] SceneChanger _sceneChanger;
+
     Rigidbody2D _rb2D;
     SpriteRenderer _renderer;
-
-    [SerializeField] PlayerData _playerData;
-    [SerializeField] SpriteRenderer _orbSlot;
-    [SerializeField] float _speed;
-    [SerializeField] LayerMask _orbLayer;
-
     Vector2 _direction;
 
     public OrbData CurrentOrb { get => _playerData.currentOrb; set => _playerData.currentOrb = value; }
@@ -43,7 +47,7 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetButtonDown("Button2"))
         {
-            SceneManager.LoadScene("Main");
+            _sceneChanger.MoveToGame();
         }
     }
 
@@ -61,8 +65,7 @@ public class PlayerController : MonoBehaviour
             Vector2 end = start + side * 0.5f;
 
             //Debug.DrawLine(start, end, Color.green);
-
-            RaycastHit2D hit = Physics2D.Linecast(start, end, _orbLayer);
+            Collider2D hit = Physics2D.OverlapCircle(_rb2D.position, _orbPickupRadius, _orbLayer);
             if (hit)
             {
                 CurrentOrb = hit.transform.GetComponent<TriggerComponent>().SwapOrbs(CurrentOrb);

@@ -26,16 +26,25 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        UpdateTimer();
+        CheckCountDown();
+    }
+
+    void UpdateTimer()
+    {
         _timerCount += Time.deltaTime;
         if (_timerCount > _secondsElapsed + 1)
         {
             _secondsElapsed++;
             OnCountdownValueChange.Invoke(_timeLimit - _secondsElapsed);
         }
+    }
+
+    void CheckCountDown()
+    {
         if (_timeLimit - _secondsElapsed <= 0)
         {
             OnCountDownFinished.Invoke();
-            SceneManager.LoadScene("Main");
         }
     }
 }

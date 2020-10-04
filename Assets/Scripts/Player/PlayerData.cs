@@ -5,4 +5,9 @@ public class PlayerData : ScriptableObject
 {
     public OrbData currentOrb;
     public OrbData noOrb;
+
+    public void ResetOrbs()
+    {
+        currentOrb = noOrb;
+    }
 }

@@ -12,12 +12,15 @@ public class TriggerComponent : MonoBehaviour
     [SerializeField] OrbData _currentOrb;
     [SerializeField] OrbData _empty;
     [Header("Trigger Info")]
-    [SerializeField] TriggerType _triggerType;
+    [SerializeField] TriggerTypeData _triggerType;
+    SpriteRenderer _renderer;
 
+    [Space]
     public UnityEvent OnOrbChanged;
 
     void Start()
     {
+        SetupTrigger();
         UpdateOrb();
     }
 
@@ -39,9 +42,12 @@ public class TriggerComponent : MonoBehaviour
     {
         _orb.gameObject.SetActive(_currentOrb != _empty);
         _orb.color = _currentOrb.color;
-        
+    }
+
+    void SetupTrigger()
+    {
+        _renderer = GetComponent<SpriteRenderer>();
+        _renderer.color = _triggerType.triggerColor;
     }
 
 }
-
-public enum TriggerType { NEUTRAL, BLUE, GREEN, PURPLE, RED};

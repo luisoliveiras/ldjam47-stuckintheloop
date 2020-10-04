@@ -10,13 +10,13 @@ public abstract class DoorComponent : MonoBehaviour
 
     public void Start()
     {
-        onTriggerOrbChangedEvent.triggerEvent.AddListener(ToggleDoor);
+        onTriggerOrbChangedEvent.AddListener(ToggleDoor);
         ToggleDoor();
     }
 
     public void OnDestroy()
     {
-        onTriggerOrbChangedEvent.triggerEvent.RemoveListener(ToggleDoor);
+        onTriggerOrbChangedEvent.RemoveListener(ToggleDoor);
     }
 
     public void ToggleDoor()
