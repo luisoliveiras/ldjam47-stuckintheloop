@@ -9,8 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f0bf1ff65ad0c44abcbc865725c8d69, type: 3}
-  m_Name: PlayerData
+  m_Script: {fileID: 11500000, guid: 9a6d71ced19929f4c8ed862659190e1b, type: 3}
+  m_Name: OnTriggerOrbChanged
   m_EditorClassIdentifier: 
-  currentOrb: {fileID: 11400000, guid: 4717f303b2841df458b32d03ca0efa3d, type: 2}
-  noOrb: {fileID: 11400000, guid: 4717f303b2841df458b32d03ca0efa3d, type: 2}
+  triggerEvent:
+    m_PersistentCalls:
+      m_Calls: []

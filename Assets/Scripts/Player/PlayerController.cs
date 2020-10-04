@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerController : MonoBehaviour
@@ -25,12 +26,25 @@ public class PlayerController : MonoBehaviour
         UpdateOrbSprite();
     }
 
+    private void FixedUpdate()
+    {
+        Move();
+    }
+
     // Update is called once per frame
     void Update()
     {
         UpdateDirection();
-        Move();
         Interact();
+        Restart();
+    }
+
+    void Restart()
+    {
+        if (Input.GetButtonDown("Button2"))
+        {
+            SceneManager.LoadScene("Main");
+        }
     }
 
     void Interact()
@@ -51,7 +65,8 @@ public class PlayerController : MonoBehaviour
             RaycastHit2D hit = Physics2D.Linecast(start, end, _orbLayer);
             if (hit)
             {
-                CurrentOrb = hit.transform.GetComponent<OrbComponent>().SwapOrbs(CurrentOrb);
+                CurrentOrb = hit.transform.GetComponent<TriggerComponent>().SwapOrbs(CurrentOrb);
+                Debug.Log(CurrentOrb);
                 UpdateOrbSprite();
             }
         }
@@ -80,6 +95,6 @@ public class PlayerController : MonoBehaviour
     void Move()
     {
         Vector2 target = _rb2D.position + _direction;
-        _rb2D.MovePosition(Vector2.MoveTowards(_rb2D.position, target, _speed*Time.deltaTime));
+        _rb2D.velocity = _direction * _speed;
     }
 }
